@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "587110967265",
+    "firebase_url": "https://door-decami.firebaseio.com",
+    "project_id": "door-decami",
+    "storage_bucket": "door-decami.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587110967265:android:6b21c0fff276e96e",
+        "android_client_info": {
+          "package_name": "com.example.doordecami"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587110967265-itsr91h193i22vflkbehg66t4ojqaa0u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.doordecami",
+            "certificate_hash": "a92a9d079ddc77d9e408b6eb99216b0dd68b02f7"
+          }
+        },
+        {
+          "client_id": "587110967265-630tip4ugq06kkglraht69tmmgluin6r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLeLP8ZC3JiPsjuoG8rII3Mgqdphxa8lM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587110967265-630tip4ugq06kkglraht69tmmgluin6r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

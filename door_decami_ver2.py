@@ -30,6 +30,7 @@ def magentic_state(door_open):
 
     return door_open
 
+now_hour = 0
 
 def TimeCapture():
     while True :
@@ -65,31 +66,27 @@ try:
 
     #While Statement that checks the door frequently
     time_list = [] 
-    tmp =[]
+    tmp = []
     while(True):
-
-        time_list= TimeCapture()
+        time_list = TimeCapture()
 
         if tmp != time_list :
             tmp = time_list
             print("now time : %s%s-%s%s" %(tmp[0], tmp[1], tmp[4], tmp[5]))
         # when the time is 5:00 Am door state is closed
         if now_hour == 5 :
-        door_state = bool(0)
-        firebase.put('/', "door_state", door_state)
+            door_state = bool(0)
+            firebase.put('/', "door_state", door_state)
 
-        door_open =not bool(GPIO.input(SENSOR_PIN))
+        door_open = not bool(GPIO.input(SENSOR_PIN))
         
-        if door_open == bool(1)
-        
-        door_state = bool(1)
-        firebase.put('/', "door_state", door_state)
-
+        if door_open == bool(1):
+            door_state = bool(1)
+            firebase.put('/', "door_state", door_state)
         
         time.sleep(CHECK_TIME)
 
 #When Ctrl+C is pressed
 except KeyboardInterrupt: 
-    GPIO.remove_event_detect(SENSOR_PIN)
     GPIO.cleanup()
 

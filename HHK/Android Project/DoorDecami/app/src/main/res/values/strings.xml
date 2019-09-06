@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Door Decami</string>
+    <string name="string_state_open">문이 열려있습니다.</string>
+
+    <!--Content Description -->
+    <string name="description_title">Title Image</string>
+    <string name="description_state">State Image</string>
+</resources>
